@@ -1,0 +1,12 @@
+.splash-screen{
+    
+    height: 30vh;
+    background-image: url(../img/fondecran1.jpg);
+    background-size: cover;
+}
+.info{
+
+    background-color: cornflowerblue;
+}
+
+

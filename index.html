@@ -1,17 +1,672 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crêperie</title>
     <!-- lien pour boostsrap -->
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="node_modules\bootstrap\dist\css\bootstrap.css"
+    />
+    <link rel="stylesheet" href="assets\css\style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- splashScreen -->
+
+      <!-- navbar -->
+       
+      <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bienvenue chez vous</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#entrees"
+                  >Entrées</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#plats">Plats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#desserts">Desserts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="splash-screen text-center">
+        <h1>LA BONNE GALETTE</h1>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="text-center text-uppercase mt-3">nos entrees</h2>
+      <section class="row justify-content-around" id="entrees">
+
+        <!-- debut de card -->
+        <div class="card m-4 px-0 col-3 shadow">
+          <img
+            src="assets/img/saladesaumon21112024.jpg"
+            class="card-img-top"
+            alt="Image salade saumon"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Salade saumon</h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">7,50 €</a>
+            <button
+              type="button"
+              class="btn info"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="salade,tomate,radis,saumon"
+            >
+              + d'info
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#saumon"
+            >
+              Commander
+            </button>
+            <div class="modal" tabindex="-1" id="saumon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Bon Appétit !</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Votre commande a bien été ajoutée.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Payer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- fin de card -->
+
+         <!-- debut de card -->
+        <div class="card m-4 px-0 col-3 shadow">
+          <img
+            src="assets/img/entree23112024 (1).jpg"
+            class="card-img-top"
+            alt="Image salade composée"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Salade composée</h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">6,50 €</a>
+            <button
+              type="button"
+              class="btn info"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="salade,tomate,concombre,soja"
+            >
+              + d'info
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#saumon"
+            >
+              Commander
+            </button>
+            <div class="modal" tabindex="-1" id="saumon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- fin de card -->
+
+         <!-- debut de card -->
+        <div class="card m-4 px-0 col-3 shadow">
+          <img
+            src="assets/img/saladecomposée2 21112024.jpg"
+            class="card-img-top"
+            alt="Image salade composée"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Salade composée</h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">5,50 €</a>
+            <button
+              type="button"
+              class="btn info"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              data-bs-content="salade,tomate,maïs,thon,oeuf"
+            >
+              + d'info
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#saumon"
+            >
+              Commander
+            </button>
+            <div class="modal" tabindex="-1" id="saumon">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- fin de card -->
+
+        
+      </section>
 
 
-    
+      <!-- nos plats -->
+      <h2 class="text-center text-uppercase mt-3">nos plats</h2>
+      <section class="row justify-content-around" id="plats">
+       
+      <!-- debut de card -->
+      <div class="card m-4 px-0 col-3 shadow">
+        <img
+          src="assets/img/galetteepinard21112024.jpg"
+          class="card-img-top"
+          alt="Image galette epinard"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Galette épinard</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">8 €</a>
+          <button
+            type="button"
+            class="btn info"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="galette,épinard,oeuf"
+          >
+            + d'info
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#saumon"
+          >
+            Commander
+          </button>
+          <div class="modal" tabindex="-1" id="saumon">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- fin de card -->
+
+       <!-- debut de card -->
+      <div class="card m-4 px-0 col-3 shadow">
+        <img
+          src="assets/img/Galette_de_sarrasin_complète_bretonne21112024.jpg"
+          class="card-img-top"
+          alt="Image galette complète"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Galette complète</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">8 €</a>
+          <button
+            type="button"
+            class="btn info"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="galette,jambon,fromage,oeuf"
+          >
+            + d'info
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#saumon"
+          >
+            Commander
+          </button>
+          <div class="modal" tabindex="-1" id="saumon">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- fin de card -->
+
+       <!-- debut de card -->
+      <div class="card m-4 px-0 col-3 shadow">
+        <img
+          src="assets/img/Galette_Auray21112024.jpg"
+          class="card-img-top"
+          alt="Image galette auray"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Galette auray</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">8 €</a>
+          <button
+            type="button"
+            class="btn info"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="galette,poivron,chorizo,oeuf"
+          >
+            + d'info
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#saumon"
+          >
+            Commander
+          </button>
+          <div class="modal" tabindex="-1" id="saumon">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- fin de card -->
+
+      </section>
+
+
+      <!-- nos desserts -->
+      <h2 class="text-center text-uppercase mt-3">nos desserts</h2>
+      <section class="row justify-content-around" id="desserts">
+        
+       <!-- debut de card -->
+       <div class="card m-4 px-0 col-3 shadow">
+        <img
+          src="assets/img/dessert121112024.jpg"
+          class="card-img-top"
+          alt="Image crèpe banane chocolat"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Crêpe banane chocolat</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">5 €</a>
+          <button
+            type="button"
+            class="btn info"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="crêpe,banane,chocolat"
+          >
+            + d'info
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#saumon"
+          >
+            Commander
+          </button>
+          <div class="modal" tabindex="-1" id="saumon">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- fin de card -->
+
+       <!-- debut de card -->
+      <div class="card m-4 px-0 col-3 shadow">
+        <img
+          src="assets/img/dessert221112024.jpg"
+          class="card-img-top"
+          alt="Image crèpe duo chocolat"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Crêpe duo chocolat fraise banane</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">6 €</a>
+          <button
+            type="button"
+            class="btn info"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="crêpe,chocolat,blanc et noir,banane,fraise"
+          >
+            + d'info
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#saumon"
+          >
+            Commander
+          </button>
+          <div class="modal" tabindex="-1" id="saumon">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- fin de card -->
+
+       <!-- debut de card -->
+      <div class="card m-4 px-0 col-3 shadow">
+        <img
+          src="assets/img/dessertcoupedeglace23112024 (1).jpg"
+          class="card-img-top"
+          alt="Image desserts"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Glaces</h5>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">6 €</a>
+          <button
+            type="button"
+            class="btn info"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="banana split,pêche melba et bien d'autres... lais-vous tenter"
+          >
+            + d'info
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#saumon"
+          >
+            Commander
+          </button>
+          <div class="modal" tabindex="-1" id="saumon">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- fin de card -->
+
+
+      </section>
+    </main>
+
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.453926629581!2d0.16688697551146323!3d49.513705454368605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02fe40985f1ff%3A0x89e1a03a20457b7b!2sAfpa%20-%20Centre%20du%20Havre!5e0!3m2!1sfr!2sfr!4v1732114904153!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+
     <!-- lien pour le script -->
-    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
-</body>
+
+    <script src="./node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
 </html>
